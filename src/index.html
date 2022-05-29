@@ -19,7 +19,7 @@
     <!-- header -->
     <header>
       <!-- sm:mt-12 = 640pxよりも大きいときmt-12が適用される -->
-      <nav class="container flex items-center py-4 mt-4 sm:mt-12">
+      <nav class="container flex items-center py-3 mt-3 sm:mt-12">
         <!-- <h1 class="text-udemy-purple">TailWind CSS3.0</h1> -->
         <!-- <h1>Hello</h1> -->
         <div class="py-1"><img src="./images/logo-bookmark.svg" alt="" /></div>
@@ -43,21 +43,23 @@
       </nav>
     </header>
 
-    <!-- hero -->
+    <!-- Hero -->
     <section class="relative">
       <div
-        class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-20"
+        class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28"
       >
-        <!-- content -->
-        <div class="flex flex-grow flex-col items-center lg:items-center">
+        <!-- Content -->
+        <div class="flex flex-1 flex-col items-center lg:items-start">
           <h2
-            class="text-udemy-blue text-3xl md:text-4xl lg:text-5xl text-center lg:text-left mb-6"
+            class="text-udemy-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6"
           >
             楽しいヨガ教室
           </h2>
           <p class="text-udemy-grey text-lg text-center lg:text-left mb-6">
-            テレワークで運動不足が続く毎日。健康的な身体を維持するためには定期的な運動が欠かせません。
-            楽しいヨガ教室では週末の土日に楽しくヨガを学んで身体を動かすことができます。
+            テレワークで運動不足が続く毎日。<br />
+            健康的な身体を維持するためには定期的な運動が欠かせません。
+            楽しいヨガ教室では週末の土日に楽しくヨガを学んで
+            身体を動かすことができます。
           </p>
           <div class="flex justify-center flex-wrap gap-6">
             <button
@@ -74,8 +76,32 @@
             </button>
           </div>
         </div>
+        <!-- Image -->
+        <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+          <img
+            class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+            src="./images/hero-bg.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- Rounded Rectangle -->
+      <div
+        class="hidden md:block overflow-hidden bg-udemy-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-36"
+      ></div>
+    </section>
 
-        <!-- img -->
+    <!-- Features -->
+    <section class="bg-udemy-white py-20 mt-20 lg:mt-60">
+      <!-- Heading -->
+      <div class="sm:w-3/4">
+        <h1>特徴</h1>
+        <p>
+          テレワークで運動不足が続く毎日。<br />
+          健康的な身体を維持するためには定期的な運動が欠かせません。 <br />
+          楽しいヨガ教室では週末の土日に楽しくヨガを学んで
+          身体を動かすことができます。
+        </p>
       </div>
     </section>
   </body>
