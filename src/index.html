@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>ランディングページ</title>
+  </head>
+  <body class="font-body">
+    <!-- <h1 class="text-3xl font-bold underline">Hello TailWind CSS 3.0🚀</h1> -->
+    <!-- header -->
+    <header>
+      <!-- sm:mt-12 = 640pxよりも大きいときmt-12が適用される -->
+      <nav class="container flex items-center py-4 mt-4 sm:mt-12">
+        <!-- <h1 class="text-udemy-purple">TailWind CSS3.0</h1> -->
+        <!-- <h1>Hello</h1> -->
+        <div class="py-1"><img src="./images/logo-bookmark.svg" alt="" /></div>
+        <!-- flex1 = flex-grow: 1、flex-shrink: 1、flex-basis: 0 -->
+        <ul
+          class="hidden sm:flex flex-grow justify-end text-udemy-blue text-base gap-12 items-center"
+        >
+          <li class="cursor-pointer">特徴</li>
+          <li class="cursor-pointer">価格</li>
+          <li class="cursor-pointer">お問い合わせ</li>
+          <button
+            type="button"
+            class="bg-udemy-red text-white rounded-md px-7 py-3"
+          >
+            ログイン
+          </button>
+        </ul>
+        <div class="flex sm:hidden justify-end flex-grow">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero -->
+    <section class="relative">
+      <div
+        class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-20"
+      >
+        <!-- content -->
+        <div class="flex flex-grow flex-col items-center lg:items-center">
+          <h2
+            class="text-udemy-blue text-3xl md:text-4xl lg:text-5xl text-center lg:text-left mb-6"
+          >
+            楽しいヨガ教室
+          </h2>
+          <p class="text-udemy-grey text-lg text-center lg:text-left mb-6">
+            テレワークで運動不足が続く毎日。健康的な身体を維持するためには定期的な運動が欠かせません。
+            楽しいヨガ教室では週末の土日に楽しくヨガを学んで身体を動かすことができます。
+          </p>
+          <div class="flex justify-center flex-wrap gap-6">
+            <button
+              type="button"
+              class="btn btn-purple hover:bg-udemy-white hover:text-black"
+            >
+              無料で参加
+            </button>
+            <button
+              type="button"
+              class="btn btn-white hover:bg-udemy-purple hover:text-white"
+            >
+              お問い合わせ
+            </button>
+          </div>
+        </div>
+
+        <!-- img -->
+      </div>
+    </section>
+  </body>
+</html>
